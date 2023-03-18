@@ -34,10 +34,12 @@
         <a href="about.html">about</a>
         <a href="contact.html">contact us</a>
         <a href="menu.html">our menu</a>
-        <a class="arabic" href="#book">عاللّوح</a>
+        <a class="arabic" href="law7.html">عاللّوح</a>
       </nav>
 
-      <a href="#" class="btn">order now</a>
+      <a href="#" class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+      </svg></a>
     </header>
 
     <!-- HOME -->
@@ -99,12 +101,12 @@
       <div class="box-container">
         <div class="box">
           <h3>quick links</h3>
-          <a href="#"><i class="fas fa-arrow-right"></i> home</a>
-          <a href="#"><i class="fas fa-arrow-right"></i> about</a>
-          <a href="#"><i class="fas fa-arrow-right"></i> menu</a>
-          <a href="#"><i class="fas fa-arrow-right"></i> review</a>
-          <a href="#"><i class="fas fa-arrow-right"></i> book</a>
-        </div>
+          <a href="index.html"><i class="fas fa-arrow-right"></i> home</a>
+          <a href="about.html"><i class="fas fa-arrow-right"></i> about</a>
+          <a href="menu.html"><i class="fas fa-arrow-right"></i> menu</a>
+          <a href="contact.html"><i class="fas fa-arrow-right"></i> contact us</a>
+          <a href="law7.html"><i class="fas fa-arrow-right"></i> 3al law7</a>
+      </div>
 
         <div class="box">
           <h3>contact info</h3>
@@ -154,140 +156,15 @@
 <style>
   @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
 
-  :root {
-    --main-color: #443;
-    --border-radius: 95% 4% 97% 5% / 4% 94% 3% 95%;
-    --border-radius-hover: 4% 95% 6% 95% / 95% 4% 92% 5%;
-    --border: 0.2rem solid var(--main-color);
-    --border-hover: 0.2rem dashed var(--main-color);
-  }
-
-  * {
-    font-family: "Poppins", sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
-    border: none;
-    text-decoration: none;
-    text-transform: capitalize;
-    transition: all 0.2s linear;
-  }
-
-  html {
-    font-size: 62.5%;
-    overflow-x: hidden;
-    scroll-padding-top: 7rem;
-    scroll-behavior: smooth;
-  }
-
-  section {
-    padding: 2rem 9%;
-    margin-top: 30px;
-  }
-
-  .heading {
-    font-size: 9rem;
-    text-transform: uppercase;
-    color: transparent;
-    -webkit-text-stroke: 0.05rem var(--main-color);
-    letter-spacing: 0.2rem;
-    text-align: center;
-    pointer-events: none;
-    position: relative;
-  }
-
-  .heading span {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    color: var(--main-color);
-    font-size: 3rem;
-  }
-
-  .btn {
-    display: inline-block;
-    padding: 0.9rem 1.5rem;
-    border: var(--border);
-    border-radius: var(--border-radius);
-    color: var(--main-color);
-    background: none;
-    cursor: pointer;
-    margin-top: 1rem;
-    font-size: 1.7rem;
-  }
-
-  .btn:hover {
-    border-radius: var(--border-radius-hover);
-    border: var(--border-hover);
-  }
-
-  /* HEADER */
-
-  .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 1000;
-    
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-    padding: 2rem 9%;
-  }
-
-  .header .logo {
-    color: var(--main-color);
-    font-size: 2.3rem;
-  }
-
-  .header .logo i {
-    padding-left: 0.5rem;
-  }
-
-  .header .navbar a {
-    margin: 0 1rem;
-    font-size: 1.7rem;
-    color: var(--main-color);
-  }
-
-  .header .btn {
-    margin-top: 0;
-  }
-
-  #menu-btn {
-    font-size: 3rem;
-    color: var(--main-color);
-    cursor: pointer;
-    display: none;
-  }
+  
 
   /* HOME */
 
   .home {
     min-height: 50vh;
-        padding-top: 12rem;
+    padding-top: 12rem;
   }
-
-  .home .row {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-  }
-
-  .home .row .content {
-    flex: 1 1 42rem;
-  }
-
   .home .row .content h3 {
-    font-size: 6.5rem;
-    color: var(--main-color);
-    text-transform: uppercase;
     text-align: center;
   }
 
@@ -299,89 +176,7 @@
     bottom: 20px;
   }
 
-  .home .image-slider {
-    text-align: center;
-    padding: 3rem 0;
-  }
-
-  .home .image-slider img {
-    height: 9rem;
-    margin: 0 0.5rem;
-    cursor: pointer;
-    margin-top: 5rem;
-    object-fit: contain;
-  }
-
-  .home .image-slider img:hover {
-    transform: translateY(-2rem);
-  }
-
-  .home1 {
-    min-height: 100vh;
-    padding-top: 12rem;
-    background: url(../image/home-bg.jpg) no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
-
-  .home1 .row {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-  }
-
-  .home1 .row .content {
-    flex: 1 1 42rem;
-  }
-
-  .home1 .row .image {
-    flex: 1 1 42rem;
-    padding-top: 10rem;
-    text-align: center;
-  }
-
-  .home1 .row .image img {
-    height: 35rem;
-    animation: float 4s linear infinite;
-    object-fit: contain;
-    position: relative;
-    bottom: 30px;
-  }
-
-  @keyframes float {
-    0%,
-    100% {
-      transform: translateY(0rem);
-    }
-
-    50% {
-      transform: translateY(-5rem);
-    }
-  }
-
-  .home1 .row .content h3 {
-    font-size: 6.5rem;
-    color: var(--main-color);
-    text-transform: uppercase;
-  }
-
-  .home1 .image-slider {
-    text-align: center;
-    padding: 3rem 0;
-  }
-
-  .home1 .image-slider img {
-    height: 9rem;
-    margin: 0 0.5rem;
-    cursor: pointer;
-    margin-top: 5rem;
-    object-fit: contain;
-  }
-
-  .home1 .image-slider img:hover {
-    transform: translateY(-2rem);
-  }
+  
 
   .info{
     text-align: center;
@@ -434,75 +229,7 @@
 
 
   .book {
-    
-    background-position: center;
-    background-size: cover;
     margin-top: 70px;
-  }
-
-  .book form {
-    margin: 0 auto 2rem auto;
-    max-width: 60rem;
-    border-radius: var(--border-radius-hover);
-    padding: 3rem;
-    border: var(--border);
-  }
-
-  .book form .box {
-    width: 100%;
-    padding: 1rem 1.2rem;
-    border-radius: 0.5rem;
-    font-size: 1.6rem;
-    background: none;
-    text-transform: none;
-    color: var(--main-color);
-    border: var(--border);
-    margin: 0.7rem 0;
-  }
-
-  .book form .box:focus {
-    border: var(--border-hover);
-  }
-
-  .book form textarea {
-    height: 15rem;
-    resize: none;
-  }
-
-  .footer .box-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
-    gap: 1.5rem;
-    
-  }
-
-  .footer .box-container .box h3 {
-    font-size: 2.5rem;
-    padding: 1rem 0;
-    color: var(--main-color);
-  }
-
-  .footer .box-container .box a {
-    display: block;
-    font-size: 1.5rem;
-    padding: 1rem 0;
-    color: var(--main-color);
-  }
-
-  .footer .box-container .box a i {
-    padding-right: 0.5rem;
-  }
-
-  .footer .box-container .box a:hover i {
-    padding-right: 2rem;
-  }
-
-  .footer .credit {
-    text-align: center;
-    font-size: 2rem;
-    padding: 2rem 1rem;
-    margin-top: 1rem;
-    color: var(--main-color);
   }
 
   .footer .credit span {
@@ -527,48 +254,11 @@
   }
 
   @media (max-width: 768px) {
-    .heading {
-      font-size: 6rem;
-    }
-
-    .heading span {
-      font-size: 2.3rem;
-    }
-
-    #menu-btn {
-      display: initial;
-    }
-
-    #menu-btn.fa-times {
-      transform: rotate(180deg);
-    }
-
-    .header .navbar {
-      position: absolute;
-      top: 99%;
-      left: 0;
-      right: 0;
-      background: #fff;
-      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    }
-
-    .header .navbar.active {
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    }
-
-    .header .navbar a {
-      display: block;
-      font-size: 2.2rem;
-      margin: 0;
-      padding: 1.5rem 2rem;
-    }
-
     .home {
       text-align: center;
     }
 
     .home .row .content h3 {
-      font-size: 4rem;
       top: 30px;
       position: relative;
     }
@@ -579,34 +269,6 @@
       position: relative;
     }
 
-    .home .row .content .btn {
-      top: 50px;
-      position: relative;
-    }
-
-    .menu .box-container .box {
-      margin-left: 0;
-      margin-top: 6rem;
-      flex-flow: column;
-      text-align: center;
-    }
-
-    .menu .box-container .box img {
-      margin-left: 0;
-      margin-top: -6rem;
-    }
   }
 
-  @media (max-width: 450px) {
-    html {
-      font-size: 50%;
-    }
-
-    .home .row .image img {
-      height: auto;
-      width: 50%;
-      position: relative;
-      top: 40px;
-    }
-  }
 </style>
